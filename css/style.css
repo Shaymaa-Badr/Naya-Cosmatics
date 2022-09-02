@@ -218,3 +218,7 @@ h4 {
     font-size: 23px; /* Increase font size */
   
 }
+.brand_logo{
+  height:'auto';
+  width:300px !important
+} 
