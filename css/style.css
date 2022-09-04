@@ -181,40 +181,40 @@ h4 {
 /* components */
 /* Home component */
 .hero_bg {
-  background-image: url('../assets/images/Naya-Home-bg.png');
+  background-image: url('.../assets/images/Naya-Home-bg.png');
   min-height: 100vh;
 }
 
 /* About component */
 .about_bg {
-  background-image: url('../assets/images/about_bg.png');
+  background-image: url('.../assets/images/about_bg.png');
 }
 
 /* Global component */
 .global_bg {
-  background-image: url('../assets/images/Naya-international_bg.png');
+  background-image: url('.../assets/images/Naya-international_bg.png');
 }
 
 /* Contact component */
 .contact_bg {
-  background-image: url('../assets/images/Naya-Conatct_bg.png');
+  background-image: url('.../assets/images/Naya-Conatct_bg.png');
 }
 
 .body_care_bg {
-  background-image: url('../assets/images/Naya_Make_up__plain_bg.png');
+  background-image: url('.../assets/images/Naya_Make_up__plain_bg.png');
 }
 
 .makeup_bg {
-  background-image: url('../assets/images/Naya_Make_up__plain_bg.png');
+  background-image: url('.../assets/images/Naya_Make_up__plain_bg.png');
 }
 
 .hair_care_bg {
-  background-image: url('../assets/images/Naya_hair_bg.png');
+  background-image: url('.../assets/images/Naya_hair_bg.png');
   /* min-height: 100vh; */
 }
 
 .hair_bg {
-  background-image: url('../assets/images/Naya_hair_care_bg.png');
+  background-image: url('.../assets/images/Naya_hair_care_bg.png');
   min-height: 100vh;
 }
 
@@ -224,7 +224,7 @@ h4 {
 }
 
 .contact_bg {
-  background-image: url('../assets/images/Naya-Conatct_bg.png');
+  background-image: url('.../assets/images/Naya-Conatct_bg.png');
 
 }
 
