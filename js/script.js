@@ -78,12 +78,12 @@ const translation = {
 
 const langSelector = document.querySelector('select')
 const langOption = document.querySelectorAll('option')
-const makeupAr = './assets/img/Naya_makup_img_ar1.png'
-const bodyProductsAr = './assets/img/Naya_body_care_ar.png';
-const hairprouductsAr = './assets/img/Naya_hair_products_img_ar.png'
-const makeupEN = './assets/img/Naya_makup_img_en.png'
-const bodyProductsEn = './assets/img/Naya_body_care_en.png';
-const hairprouductsEn = './assets/img/Naya_hair_products_img_en.png'
+const makeupAr = '../assets/img/Naya_makup_img_ar1.png'
+const bodyProductsAr = '../assets/img/Naya_body_care_ar.png';
+const hairprouductsAr = '../assets/img/Naya_hair_products_img_ar.png'
+const makeupEN = '../assets/img/Naya_makup_img_en.png'
+const bodyProductsEn = '../assets/img/Naya_body_care_en.png';
+const hairprouductsEn = '../assets/img/Naya_hair_products_img_en.png'
 
 // Select language
 langSelector.addEventListener('change', e => {
