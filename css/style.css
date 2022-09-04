@@ -23,7 +23,7 @@ a:active {
 /* Local fonts */
 @font-face {
   font-family: "Century Gothic";
-  src: local("CenturyGothic"), url('/fonts/CenturyGothic.ttf') format("truetype");
+  src: local("CenturyGothic"), url('/fonts/Century\ Gothic.ttf') format("truetype");
   font-weight: normal;
 }
 
