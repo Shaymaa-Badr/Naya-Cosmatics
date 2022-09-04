@@ -9,7 +9,6 @@ body {
 
 ul {
   list-style-type: none;
-  /* Remove bullets */
 }
 
 a:hover,
@@ -264,11 +263,11 @@ h4 {
 }
 
 .nav-top {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1030 !important;
 
 }
 
