@@ -23,7 +23,7 @@ a:active {
 /* Local fonts */
 @font-face {
   font-family: "Century Gothic";
-  src: local("CenturyGothic"), url('/fonts/Century\ Gothic.ttf') format("truetype");
+  src: local("CenturyGothic"), url('/fonts/Century\Gothic.ttf') format("truetype");
   font-weight: normal;
 }
 
@@ -83,19 +83,19 @@ a:active {
 @font-face {
   font-family: 'Nexa Regular';
   font-weight: 600;
-  src: local('Nexa-Regular'), url('/fonts/Nexa\ Regular.otf') format('opentype');
+  src: local('Nexa-Regular'), url('/fonts/Nexa\Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nexa Light';
   font-weight: 400;
-  src: local('Nexa-Regular'), url('/fonts/Nexa\ Light.otf') format('opentype');
+  src: local('Nexa-Regular'), url('/fonts/Nexa\Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nexa Bold';
   font-weight: 700;
-  src: local('Nexa-Bold'), url('/fonts/Nexa\ Bold.otf') format('opentype');
+  src: local('Nexa-Bold'), url('/fonts/Nexa\Bold.otf') format('opentype');
 }
 
 /* General CSS styles */
