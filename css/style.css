@@ -9,7 +9,6 @@ body {
 
 ul {
   list-style-type: none;
-  /* Remove bullets */
 }
 
 a:hover,
@@ -24,79 +23,79 @@ a:active {
 /* Local fonts */
 @font-face {
   font-family: "Century Gothic";
-  src: local("CenturyGothic"), url('/fonts/CenturyGothic.ttf') format("truetype");
+  src: local("CenturyGothic"), url('./fonts/Century\Gothic.ttf') format("truetype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Elmessiri Regular';
-  src: local('elmessiri-regular'), url('/fonts/elmessiri-regular.otf') format('opentype');
+  src: local('elmessiri-regular'), url('./fonts/elmessiri-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Elmessiri Medium';
   font-weight: 600;
-  src: local('Elmessiri-Medium'), url('/fonts/elmessiri-medium.otf') format('opentype');
+  src: local('Elmessiri-Medium'), url('./fonts/elmessiri-medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Elmessiri Semibold';
   font-weight: 700;
-  src: local('Elmessiri-semibold'), url('/fonts/elmessiri-semibold.otf') format('opentype');
+  src: local('Elmessiri-semibold'), url('./fonts/elmessiri-semibold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Elmessiri Bold';
   font-weight: 900;
-  src: local('Elmessiri-Bold'), url('/fonts/elmessiri-bold.otf') format('opentype');
+  src: local('Elmessiri-Bold'), url('./fonts/elmessiri-bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'GOTHIC';
   font-weight: normal;
-  src: local('GOTHIC'), url('/fonts/GOTHIC.TTF') format('truetype');
+  src: local('GOTHIC'), url('./fonts/GOTHIC.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICB';
   font-weight: 600;
-  src: local('GOTHICB'), url('/fonts/GOTHICB.TTF') format('truetype');
+  src: local('GOTHICB'), url('./fonts/GOTHICB.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICB0';
   font-weight: 700;
-  src: local('GOTHICB0'), url('/fonts/GOTHICB0.TTF') format('truetype');
+  src: local('GOTHICB0'), url('./fonts/GOTHICB0.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICBI';
   font-weight: 800;
-  src: local('GOTHICBI'), url('/fonts/GOTHICBI.TTF') format('truetype');
+  src: local('GOTHICBI'), url('./fonts/GOTHICBI.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICI';
   font-weight: 900;
-  src: local('GOTHICI'), url('/fonts/GOTHICI.TTF') format('truetype');
+  src: local('GOTHICI'), url('./fonts/GOTHICI.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'Nexa Regular';
   font-weight: 600;
-  src: local('Nexa-Regular'), url('/fonts/Nexa\ Regular.otf') format('opentype');
+  src: local('Nexa-Regular'), url('./fonts/Nexa\Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nexa Light';
   font-weight: 400;
-  src: local('Nexa-Regular'), url('/fonts/Nexa\ Light.otf') format('opentype');
+  src: local('Nexa-Regular'), url('./fonts/Nexa\Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nexa Bold';
   font-weight: 700;
-  src: local('Nexa-Bold'), url('/fonts/Nexa\ Bold.otf') format('opentype');
+  src: local('Nexa-Bold'), url('./fonts/Nexa\Bold.otf') format('opentype');
 }
 
 /* General CSS styles */
@@ -264,11 +263,11 @@ h4 {
 }
 
 .nav-top {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1030 !important;
 
 }
 
