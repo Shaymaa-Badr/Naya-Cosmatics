@@ -17,86 +17,86 @@ a:visited,
 a:link,
 a:active {
   text-decoration: none;
-  color: #231F20;
+  /* color: #231F20; */ 
+  color: #645359;
 }
 
 /* Local fonts */
 @font-face {
   font-family: "Century Gothic";
-  src: local("CenturyGothic"),
-    url("./fonts/CenturyGothic.ttf") format("truetype");
+  src: local("CenturyGothic"), url('/fonts/CenturyGothic.ttf') format("truetype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Elmessiri Regular';
-  src: local('elmessiri-regular'), url(./fonts/elmessiri-regular.otf) format('opentype');
+  src: local('elmessiri-regular'), url('/fonts/elmessiri-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Elmessiri Medium';
   font-weight: 600;
-  src: local('Elmessiri-Medium'), url(./fonts/elmessiri-medium.otf) format('opentype');
+  src: local('Elmessiri-Medium'), url('/fonts/elmessiri-medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Elmessiri Semibold';
   font-weight: 700;
-  src: local('Elmessiri-semibold'), url(./fonts/elmessiri-semibold.otf) format('opentype');
+  src: local('Elmessiri-semibold'), url('/fonts/elmessiri-semibold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Elmessiri Bold';
   font-weight: 900;
-  src: local('Elmessiri-Bold'), url(./fonts/elmessiri-bold.otf) format('opentype');
+  src: local('Elmessiri-Bold'), url('/fonts/elmessiri-bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'GOTHIC';
   font-weight: normal;
-  src: local('GOTHIC'), url(./fonts/GOTHIC.TTF) format('truetype');
+  src: local('GOTHIC'), url('/fonts/GOTHIC.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICB';
   font-weight: 600;
-  src: local('GOTHICB'), url(./fonts/GOTHICB.TTF) format('truetype');
+  src: local('GOTHICB'), url('/fonts/GOTHICB.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICB0';
   font-weight: 700;
-  src: local('GOTHICB0'), url(./fonts/GOTHICB0.TTF) format('truetype');
+  src: local('GOTHICB0'), url('/fonts/GOTHICB0.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICBI';
   font-weight: 800;
-  src: local('GOTHICBI'), url(./fonts/GOTHICBI.TTF) format('truetype');
+  src: local('GOTHICBI'), url('/fonts/GOTHICBI.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'GOTHICI';
   font-weight: 900;
-  src: local('GOTHICI'), url(./fonts/GOTHICI.TTF) format('truetype');
+  src: local('GOTHICI'), url('/fonts/GOTHICI.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'Nexa Regular';
   font-weight: 600;
-  src: local('Nexa-Regular'), url(./fonts/Nexa\ Regular.otf) format('opentype');
+  src: local('Nexa-Regular'), url('/fonts/Nexa\ Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nexa Light';
   font-weight: 400;
-  src: local('Nexa-Regular'), url(./fonts/Nexa\ Light.otf) format('opentype');
+  src: local('Nexa-Regular'), url('/fonts/Nexa\ Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Nexa Bold';
   font-weight: 700;
-  src: local('Nexa-Bold'), url(./fonts/Nexa\ Bold.otf) format('opentype');
+  src: local('Nexa-Bold'), url('/fonts/Nexa\ Bold.otf') format('opentype');
 }
 
 /* General CSS styles */
@@ -116,20 +116,36 @@ h4 {
   font-size: 31px
 }
 
-.header {
+.header_en_font {
   font-family: 'Nexa Bold' !important;
+}
+
+.header_ar_font {
+  font-family: 'Elmessiri Bold' !important;
+}
+
+.text_en_font {
+  font-family: 'Century Gothic' !important;
+}
+
+.text_ar_font {
+  font-family: 'Elmessiri Regular' !important;
+}
+
+.header {
   /* line-height: 12.29px; */
   letter-spacing: -0.04px;
   text-transform: uppercase;
-  color: #231F20;
+  /* color: #231F20; */
+  color: #895b6c;
 }
 
 .text {
-  font-family: 'Century Gothic';
   line-height: 23px;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: -0.13px;
-  color: #231F20;
+  /* color: #231F20; */
+  color: #645359;
 }
 
 .section {
@@ -143,10 +159,22 @@ h4 {
   text-align: center;
   background-color: transparent;
 }
-.form-control:focus{
-  border-color:#f2f2f2 !important;
+
+.form-control:focus {
+  border-color: #f2f2f2 !important;
   box-shadow: none !important;
 }
+
+.form-select,
+.form-select option {
+  background-color: transparent !important;
+}
+
+.form-select:focus {
+  border-color: #645359 !important;
+  box-shadow: none !important
+}
+
 .p-top {
   padding-top: .7rem !important;
 }
@@ -154,71 +182,118 @@ h4 {
 /* components */
 /* Home component */
 .hero_bg {
-  background-image: url('../assets/images/Naya-Home-bg.png');
+  background-image: url('/assets/images/Naya-Home-bg.png');
   min-height: 100vh;
 }
 
 /* About component */
 .about_bg {
-  background-image: url('../assets/images/about_bg.png');
+  background-image: url('/assets/images/about_bg.png');
 }
 
 /* Global component */
 .global_bg {
-  background-image: url('../assets/images/Naya-international_bg.png');
+  background-image: url('/assets/images/Naya-international_bg.png');
 }
 
 /* Contact component */
 .contact_bg {
-  background-image: url('../assets/images/Naya-Conatct_bg.png');
+  background-image: url('/assets/images/Naya-Conatct_bg.png');
 }
 
 .body_care_bg {
-
-  background-image: url('../assets/images/Naya_body_products_bg.png');
+  background-image: url('/assets/images/Naya_Make_up__plain_bg.png');
 }
 
 .makeup_bg {
-  background-image: url('../assets/images/Naya_Make_up__plain_bg.png');
+  background-image: url('/assets/images/Naya_Make_up__plain_bg.png');
 }
 
 .hair_care_bg {
-  background-image: url('../assets/images/Naya_hair_bg.png');
+  background-image: url('/assets/images/Naya_hair_bg.png');
   /* min-height: 100vh; */
 }
 
 .hair_bg {
-  background-image: url('../assets/images/Naya_hair_care_bg.png');
+  background-image: url('/assets/images/Naya_hair_care_bg.png');
   min-height: 100vh;
 }
 
 .mission_bg {
-  background-image: url('../assets/images/Naya-mission_bg.png');
+  background-image: url('/assets/images/Naya-Conatct_bg.png');
 
 }
 
 .contact_bg {
-  background-image: url('../assets/images/Naya-Conatct_bg.png');
+  background-image: url('/assets/images/Naya-Conatct_bg.png');
 
 }
 
-.scrollTop_btn{
-    /* display: none; Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #dba4ce; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-    font-size: 23px; /* Increase font size */
-  
+.scrollTop_btn {
+  /* display: none; Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #dba4ce;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 23px;
+  /* Increase font size */
+
 }
-.brand_logo{
-  height:'auto';
-  width:300px !important
-} 
+
+.brand_logo {
+  height: 'auto';
+  width: 450px !important
+}
+
+.nav-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+}
+
+@media screen and (max-width:992px) {
+  h1 {
+    font-size: 35px
+  }
+
+  h2 {
+    font-size: 25px
+  }
+
+  h3 {
+    font-size: 20px
+  }
+
+  h4 {
+    font-size: 15px
+  }
+
+  .text {
+    font-size: 13px !important;
+  }
+
+  .naya_logo {
+    width: 250px !important;
+  }
+}
