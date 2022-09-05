@@ -158,3 +158,33 @@ const setFonts = (lang) => {
         }
     })
 }
+
+// Form submittion
+const submitForm = (e) => {
+    e.preventDefault()
+    let formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        company: document.getElementById("company").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value,
+    }
+    if (formData.name != '' && formData.email != '' && formData.company != '' && formData.phone != '' && formData.message != '') {
+        // Send emil using Emailsjs
+        emailjs.send("service_ntucrew", "template_zav0jxn", formData)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+        document.querySelector("#error").classList.add('d-none')
+        document.querySelector("#success").classList.remove('d-none')
+        document.querySelector('#contact_form').reset()
+    } else {
+        document.querySelector("#error").classList.remove('d-none')
+
+    }
+
+}
+
+document.querySelector('#contact_form').addEventListener("submit", submitForm)
