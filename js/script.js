@@ -28,7 +28,7 @@ const translation = {
         mission_p2: `We are the first choice of cosmetics provider contributing to the world beauty and well-being…`,
         contact_title: "contact us",
         address: `Business Center, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates`,
-        submit: "Submit",
+        submit: "Send",
         name_input: "Name",
         email_input: "E-mail",
         phone_input: "Phone number",
@@ -84,6 +84,7 @@ const hairprouductsAr = '../assets/img/Naya_hair_products_img_ar.png'
 const makeupEN = '../assets/img/Naya_makup_img_en.png'
 const bodyProductsEn = '../assets/img/Naya_body_care_en.png';
 const hairprouductsEn = '../assets/img/Naya_hair_products_img_en.png'
+const topBtn = document.querySelector("#topBtn")
 
 // Select language
 langSelector.addEventListener('change', e => {
@@ -188,3 +189,12 @@ const submitForm = (e) => {
 }
 
 document.querySelector('#contact_form').addEventListener("submit", submitForm)
+
+
+//  Scroll top
+const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+topBtn.addEventListener('click', scrollTop)
+// Show top button
+window.onscroll = () => window.scrollY > 1000 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0

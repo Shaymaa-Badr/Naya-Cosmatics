@@ -10,25 +10,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Naya Cosmetics</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-trasparent nav-top set_dir">
+  <nav class="navbar navbar-expand-lg fixed-top set_dir nav-top">
     <div class="container">
       <a class="navbar-brand" href="#" style="height:auto;width:60px">
         <img class="img-fluid" src="assets/images/logo.png">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto navbar-nav-scroll text" style="--bs-scroll-height: 200px;" id="dropdown">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" data-i18n="home">Home</a>
+            <a class="nav-link" aria-current="page" href="#home" data-i18n="home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about" data-i18n="about">About</a>
@@ -40,17 +41,17 @@
             <a class="nav-link" href="#contact" data-i18n="contact">Contact us</a>
           </li>
           <li class="nav-item dropdown px-1">
-            <select class="form-select" aria-label="Default select example">
-              <option value="en" selected>English</option>
-              <option value="ar">العربية</option>
+            <select class="form-select text" aria-label="Default select example">
+              <option class="opt" value="en" selected>English</option>
+              <option class="opt" value="ar">العربية</option>
             </select>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Hero section -->
-  <div class='hero_bg section pb-5'>
+  <!-- Home section -->
+  <div class='home_bg section pt-5' id="home">
     <div class="container">
       <div class='row'>
         <div class='col-sm-6 ml-0 mt-5'>
@@ -63,8 +64,8 @@
     </div>
   </div>
 
-
-  <div class='about_bg section pt-5 set_dir'>
+  <!-- About section -->
+  <div class='about_bg section pt-5 set_dir' id="about">
     <div class="container">
       <div class='row'>
         <div class='pt-lg-5 d-flex align-item-center'>
@@ -96,7 +97,8 @@
     </div>
 
   </div>
-  <!-- LOCAL & INTERNATIONAL PRESENCE -->
+
+  <!-- Local & INnternational section -->
   <div class='global_bg section py-5 set_dir'>
     <div class="container">
       <div class="row">
@@ -131,49 +133,50 @@
   </div>
 
   <!-- Products section -->
-  <!-- Body care section -->
-  <div class='section body_care_bg pt-5 set_dir'>
-    <div class="container">
-      <div class="row">
-        <h2 class='header pt-lg-5' data-i18n="body_title">body care</h2>
-        <div class="col-sm-12 col-md-7">
-          <img class='img-fluid img_1' src='./assets/img/Naya_body_care_en.png' />
-        </div>
-        <div class="col-sm-12 col-md-5 model">
-          <img class='img-fluid p-top' src='assets/img/Naya_Model_1.png' />
+  <div class="products" id="products">
+    <!-- Body care section -->
+    <div class='section body_care_bg pt-5 set_dir'>
+      <div class="container">
+        <div class="row">
+          <h2 class='header pt-lg-5' data-i18n="body_title">body care</h2>
+          <div class="col-sm-12 col-md-7">
+            <img class='img-fluid img_1' src='./assets/img/Naya_body_care_en.png' />
+          </div>
+          <div class="col-sm-12 col-md-5 model">
+            <img class='img-fluid p-top' src='assets/img/Naya_Model_1.png' />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Make up section -->
-  <div class='section makeup_bg pt-5'>
-    <div class="container">
-      <div class="row">
-        <h2 class='header pt-lg-5 set_dir' data-i18n="makeup_title">makeup collection</h2>
-        <div class="col-sm-12">
-          <div>
-            <img class='img-fluid img_2' src='./assets/img/Naya_makup_img_en.png' />
+    <!-- Make up section -->
+    <div class='section makeup_bg pt-5'>
+      <div class="container">
+        <div class="row">
+          <h2 class='header pt-lg-5 set_dir' data-i18n="makeup_title">makeup collection</h2>
+          <div class="col-sm-12">
+            <div>
+              <img class='img-fluid img_2' src='./assets/img/Naya_makup_img_en.png' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hair products section -->
+    <div class='section hair_care_bg pt-5'>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h2 class='header pt-lg-5' data-i18n="hair_title">shampoos & hair care</h2>
+            <div class="left_dir">
+              <img class='img-fluid img_3' src='./assets/img/Naya_hair_products_img_en.png' />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Hair products section -->
-  <div class='section hair_care_bg pt-5'>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-8">
-          <h2 class='header pt-lg-5' data-i18n="hair_title">shampoos & hair care</h2>
-          <div class="left_dir">
-            <img class='img-fluid img_3' src='./assets/img/Naya_hair_products_img_en.png' />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Vision & Mission section -->
-  <div class='section mission_bg pt-5 set_dir'>
+  <div class='vision_bg section pt-5 set_dir' id="vision">
     <div class="container">
       <div class="row">
         <h2 class='header pt-lg-5 mt-4' data-i18n="mission_title">mission & vison</h2>
@@ -193,12 +196,12 @@
     </div>
   </div>
   <!-- Contact us section -->
-  <div class='section contact_bg pt-5 set_dir'>
+  <div class='contact_bg section pt-5 set_dir' id="contact">
     <div class="container">
       <div class="row">
         <h2 class='header pt-lg-5' data-i18n="contact_title">contact us</h2>
         <div class="">
-          <div class="col-sm-12">
+          <div class="col-sm-12 col-md-6">
             <div class="alert alert-success d-none" id="success" role="alert">
               Your message has been send successfully
             </div>
@@ -207,12 +210,10 @@
             </div>
             <form class="row g-3" id="contact_form" method="post">
               <div class="col-md-6">
-                <input type="text" class="form-control" id="name" 
-                placeholder="Enter your name" data-i18n="name_input">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" data-i18n="name_input">
               </div>
               <div class="col-md-6">
-                <input type="email" class="form-control" id="email" 
-                placeholder="Enter your email"
+                <input type="email" class="form-control" id="email" placeholder="Enter your email"
                   data-i18n="email_input" required>
               </div>
               <div class="col-md-6">
@@ -228,10 +229,10 @@
                   data-i18n="msg_input"></textarea>
               </div>
               <div class="col-auto">
-                <button type="submit" class="btn btn-outline-secoundry" data-i18n="submit">Submit</button>
+                <button type="submit" class="btn px-3 form_btn" data-i18n="submit">send</button>
               </div>
             </form>
-          
+
           </div>
         </div>
         <!-- Naya cosmatics contact info -->
@@ -242,15 +243,14 @@
               <i class="fa-solid fa-at"></i><a href='#'> mohammed@nayacosmetics.ae</a></span>
             <span><i class="fa-solid fa-globe"></i>
               <a href='www.nayacosmetics.ae'> www.nayacosmetics.ae</a></span>
-            <p><i class="fa-solid fa-location-dot"></i><span data-i18n="address">
-                Business Center, Sharjah
+            <p><i class="fa-solid fa-location-dot"></i><span class="px-1" data-i18n="address"> Business Center, Sharjah
                 Publishing City Free Zone, Sharjah,
                 United Arab Emirates
               </span></p>
             <div class="socail_media py-0">
-              <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></a></i></span>
-              <span><a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></a></i></span>
-              <span><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></a></i></span>
+              <span><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></span>
+              <span><a href="http://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></span>
+              <span><a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
             </div>
           </div>
           <div class="pt-lg-5 preal_img">
@@ -265,16 +265,18 @@
       </div>
     </div>
   </div>
-  <button class="scrollTop_btn" onclick="topFunction()" id="myBtn" title="Go to top"><i
-      class="fa-solid fa-arrow-up"></i></button>
+  <!-- Scroll top btn -->
+  <button class="top_btn" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
   <!-- JavaScript Bundle with Popper -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
-    (function() {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init('user_5xJfLYW8neKFpLfEqYzs7');
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('user_5xJfLYW8neKFpLfEqYzs7');
     })();
-</script>
+  </script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
