@@ -99,16 +99,11 @@ a:active {
 }
 
 /* General CSS styles */
-h1 {
-  font-size: 47px
+h1,h2 {
+  font-size: 35px
 }
-
-h2 {
-  font-size: 40px
-}
-
 h3 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .header_en_font {
@@ -259,11 +254,6 @@ h3 {
   border-color: none !important
 }
 
-.brand_logo {
-  height: 'auto';
-  width: 450px !important
-}
-
 .nav-top {
   opacity: 0.8 !important;
   background-color: #211926 !important;
@@ -277,18 +267,10 @@ h3 {
 
 @media screen and (max-width:992px) {
 
-  h1,
-  h2 {
-    font-size: 25px
-  }
+  
 
   h3 {
     font-size: 20px;
-  }
-
-  .text {
-    font-size: 14px !important;
-    line-height: 19px;
   }
 
   .pearl_img {
@@ -296,21 +278,59 @@ h3 {
   }
 }
 
-@media screen and (max-width:676px) {
+/* @media screen and (max-width:676px) {
   .model {
     width: 300px;
   }
-}
+} */
 
 
 /* For Desktop View */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+}
 
 /* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 25px
+  }
+  .brand-logo{
+    width: 400px !important
+  }
+  .text {
+    font-size: 16px !important;
+    line-height: 19px;
+  }
+}
 
 /* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) and (min-device-width: 768px) {}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 25px
+  }
+  .brand-logo{
+    width: 350px !important
+  }
+  .text {
+    font-size: 15px !important;
+    line-height: 19px;
+  }
+}
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (max-device-width: 640px) {}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  h1,
+  h2 {
+    font-size: 25px
+  }
+  .brand-logo{
+    width: 300px !important
+  }
+  .text {
+    font-size: 14px !important;
+    line-height: 19px;
+  }
+}
