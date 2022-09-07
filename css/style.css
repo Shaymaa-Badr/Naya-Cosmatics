@@ -1,12 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   position: relative;
-  margin: 0;
 }
 
 ul {
@@ -23,7 +18,7 @@ a:active {
 /* Local fonts */
 @font-face {
   font-family: "Century Gothic";
-  src: local("CenturyGothic"), url('./fonts/Century\Gothic.ttf') format("truetype");
+  src: local("CenturyGothic"), url('/fonts/Century\Gothic.ttf') format("truetype");
   font-weight: normal;
 }
 
@@ -95,15 +90,17 @@ a:active {
 @font-face {
   font-family: 'Nexa Bold';
   font-weight: 700;
-  src: local('Nexa-Bold'), url('./fonts/Nexa\Bold.otf') format('opentype');
+  src: local('Nexa-Bold'), url('/fonts//Nexa\ Bold.otf') format('opentype');
 }
 
 /* General CSS styles */
-h1,h2 {
-  font-size: 35px
+h1,
+h2 {
+  font-size: 2.2rem
 }
+
 h3 {
-  font-size: 30px;
+  font-size: 1.9rem;
 }
 
 .header_en_font {
@@ -132,7 +129,7 @@ h3 {
 .text,
 .text a {
   line-height: 23px;
-  font-size: 17px;
+  font-size: 1.1rem;
   letter-spacing: -0.13px;
   color: #645359;
 }
@@ -236,20 +233,25 @@ h3 {
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
-  font-size: 23px;
+  font-size: 1.4rem;
   opacity: 0;
   transition: all 0.3s;
 }
-
+.alert{
+  transition: all ease-in-out 0.5;
+}
 .form_btn,
 .toggle-btn,
 .toggle-btn:focus {
   background-color: #ad7f91 !important;
   color: #f2f2f2;
+  transition: all ease-in-out 0.5s;
 }
+
 .toggle-btn:focus {
   box-shadow: 0 0 0 0 !important
 }
+
 .form_btn:hover {
   color: #ad7f91 !important;
   background-color: #f2f2f2 !important;
@@ -268,26 +270,23 @@ h3 {
 }
 
 /* For Desktop View */
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}
 
 /* For Tablet View */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  h1,
-  h2 {
-    font-size: 25px
-  }
   h3 {
-    font-size: 20px;
+    font-size: 1.7rem;
   }
-  .brand-logo{
+
+  .brand-logo {
     width: 400px !important
   }
+
   .text {
-    font-size: 16px !important;
+    font-size: 1rem !important;
     line-height: 19px;
   }
+
   .preal-img {
     width: 200px !important;
   }
@@ -295,20 +294,25 @@ h3 {
 
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (min-width: 640px) and (max-width: 768px) {
+
   h1,
   h2 {
-    font-size: 25px
+    font-size: 1.9rem;
   }
+
   h3 {
-    font-size: 20px;
+    font-size: 1.6rem;
   }
-  .brand-logo{
+
+  .brand-logo {
     width: 350px !important
   }
+
   .text {
     font-size: 15px !important;
     line-height: 19px;
   }
+
   .preal-img {
     width: 190px !important;
   }
@@ -316,20 +320,26 @@ h3 {
 
 /* For Mobile Portrait View */
 @media screen and (min-width: 480px) and (max-width: 640px) {
+
+  
   h1,
   h2 {
-    font-size: 25px
+    font-size: 1.9rem;
   }
+
   h3 {
-    font-size: 20px;
+    font-size: 1.6rem;
   }
-  .brand-logo{
+
+  .brand-logo {
     width: 300px !important
   }
+
   .text {
-    font-size: 14px !important;
+    font-size: 0.95rem !important;
     line-height: 19px;
   }
+
   .preal-img {
     width: 170px !important;
   }
