@@ -181,7 +181,7 @@ h3 {
 
 /* About component */
 .about_bg {
-  background-image: url(/assets/images/about_bg.png);
+  background-image: url(../assets/images/about_bg.png);
 }
 
 /* Global component */
