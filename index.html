@@ -144,11 +144,11 @@
     <div class='section body_care_bg pt-5 set_dir'>
       <div class="container">
         <div class="row">
-          <h2 class='header pt-lg-5' data-i18n="body_title">body care</h2>
-          <div class="col-sm-12 col-md-7">
+          <h2 class='header pt-lg-5' data-i18n="body_title" data-aos="fade-right">body care</h2>
+          <div class="col-sm-12 col-md-7" data-aos="fade-right"> 
             <img class='img-fluid img_1' src='./assets/img/Naya_body_care_en.png' />
           </div>
-          <div class="col-sm-12 col-md-5 model">
+          <div class="col-sm-12 col-md-5 model" data-aos="fade-left">
             <img class='img-fluid p-top' src='assets/img/Naya_Model_1.png' />
           </div>
         </div>
@@ -158,9 +158,9 @@
     <div class='section makeup_bg pt-5'>
       <div class="container">
         <div class="row">
-          <h2 class='header pt-lg-5 set_dir' data-i18n="makeup_title">makeup collection</h2>
+          <h2 class='header pt-lg-5 set_dir' data-i18n="makeup_title" data-aos="fade-right">makeup collection</h2>
           <div class="col-sm-12">
-            <div>
+            <div data-aos="fade-right">
               <img class='img-fluid img_2' src='./assets/img/Naya_makup_img_en.png' />
             </div>
           </div>
@@ -172,8 +172,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-8">
-            <h2 class='header pt-lg-5' data-i18n="hair_title">shampoos & hair care</h2>
-            <div class="left_dir">
+            <h2 class='header pt-lg-5' data-i18n="hair_title" data-aos="fade-right">shampoos & hair care</h2>
+            <div class="left_dir" data-aos="fade-right">
               <img class='img-fluid img_3' src='./assets/img/Naya_hair_products_img_en.png' />
             </div>
           </div>
@@ -186,16 +186,16 @@
   <div class='vision_bg section pt-5 set_dir' id="vision">
     <div class="container">
       <div class="row">
-        <h2 class='header pt-lg-5 mt-4' data-i18n="mission_title">mission & vison</h2>
+        <h2 class='header pt-lg-5 mt-4' data-i18n="mission_title" data-aos="fade-right">mission & vison</h2>
         <div class='col-sm-12 col-md-6 d-flex align-item-center'>
-          <div class='text pt-5'>
+          <div class='text pt-5' data-aos="fade-right">
             <p data-i18n="mission_p1">We provide care that lasts a lifetime…</p>
             <p data-i18n="mission_p2">We are the first choice of cosmetics provider
               contributing to the world beauty and well-being…</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-5" offset="col-md-1">
-          <div class="model">
+          <div class="model" data-aos="fade-left">
             <img class='img-fluid' src='assets/img/Naya_Model_2.png' />
           </div>
         </div>
@@ -245,7 +245,7 @@
         </div>
         <!-- Naya cosmatics contact info -->
         <div class="col-sm-12 col-md-6">
-          <div class='text pt-5' >
+          <div class='text pt-5'>
             <span class='d-block'><i class="fa-solid fa-mobile-screen-button"></i> 00971552294944</span>
             <span class='d-block'>
               <i class="fa-solid fa-at"></i><a href='#'> mohammed@nayacosmetics.ae</a></span>
@@ -280,18 +280,17 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     (function () {
       // https://dashboard.emailjs.com/admin/account
       emailjs.init('user_5xJfLYW8neKFpLfEqYzs7');
     })();
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+    
     AOS.init({
       offset: 400, // offset (in px) from the original trigger point
-  // delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
+      // delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
     });
   </script>
   <script src="js/bootstrap.bundle.min.js"></script>
