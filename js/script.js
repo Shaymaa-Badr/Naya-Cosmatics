@@ -197,4 +197,4 @@ const scrollTop = () => {
 }
 topBtn.addEventListener('click', scrollTop)
 // Show top button
-window.onscroll = () => window.scrollY > 1000 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
+window.onscroll = () => window.scrollY > 700 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
