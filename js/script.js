@@ -19,7 +19,7 @@ const translation = {
         local_p1: `Naya Cosmetics has local & international partners, liaises with production facilities in the UAE, UK, the Netherlands, Morocco and Brazil.`,
         local_p2: `Naya Cosmetics has strategic partnerships with major wholesalers, dealers & authorized resellers, agents,
               distributors, and cosmetics retailers around the world.`,
-        local_p3: `aya Cosmetics has offices in the UAE and active trade & business relationships in, Iraq, the Netherlands, UK, Morocco, Brazil and Saudi Arabia.`,
+        local_p3: `Naya Cosmetics has offices in the UAE and active trade & business relationships in, Iraq, the Netherlands, UK, Morocco, Brazil and Saudi Arabia.`,
         body_title: "body care",
         makeup_title: "makeup collection",
         hair_title: "shampoos & hair care",
@@ -66,7 +66,7 @@ const translation = {
         mission_p1: " نوفر الرعاية التي تدوم مدى الحياة لعالم الجمال و النظافة...",
         mission_p2: ` الخيار الأول كمزود مستحضرات التجميل`,
         contact_title: "اتصل بنا",
-        address: ` مركز الأعمال بالشارقةالمنطقة الحرة لمدينة النشر ، الشارقة ،الإمارات العربية المتحدة`,
+        address: ` مركز الأعمال بالشارقة المنطقة الحرة لمدينة النشر ، الشارقة ،الإمارات العربية المتحدة`,
         submit: "إرسال",
         name_input: "الاسم",
         email_input: "البريد الالكترونى",
@@ -120,6 +120,7 @@ const setLang = (lang) => {
         document.querySelector('.img_1').src = bodyProductsAr
         document.querySelector('.img_2').src = makeupAr
         document.querySelector('.img_3').src = hairprouductsAr
+
     } else {
         document.querySelectorAll('.set_dir').forEach(x => {
             x.dir = 'ltr';
@@ -127,7 +128,6 @@ const setLang = (lang) => {
         document.querySelector('.img_1').src = bodyProductsEn
         document.querySelector('.img_2').src = makeupEN
         document.querySelector('.img_3').src = hairprouductsEn
-
     }
 }
 const setSlectedOption = (lang) => {

@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg fixed-top set_dir nav-top">
     <div class="container">
       <a class="navbar-brand" href="#" style="height:auto;width:60px">
-        <img class="img-fluid" src="assets/images/logo.png">
+        <img class="img-fluid" src="assets/images/logo.png" alt="Naya logo">
       </a>
       <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -62,7 +62,7 @@
       <div class='row'>
         <div class='col-sm-6 ml-0 mt-5'>
           <div class='my-5 brand-logo'>
-            <img class='img-fluid' src='assets/img/Naya Cosmetics_Logo_PNG-02.png' />
+            <img class='img-fluid' src='assets/img/Naya Cosmetics_Logo_PNG-02.png' alt="Naya main logo" />
             <h1 class='header mt-5' data-i18n="main_title">Home of Beauty & Care Products</h1>
           </div>
         </div>
@@ -74,11 +74,11 @@
   <div class='about_bg section pt-5 set_dir' id="about">
     <div class="container">
       <div class='row'>
-        <div class='pt-lg-5 d-flex align-item-center' data-aos="fade-right">
-          <h2 class='header' data-i18n="about_title">about us</h2>
+        <div class='header pt-lg-5' data-aos="fade-right">
+          <h2 data-i18n="about_title">about us</h2>
         </div>
         <div class='col-sm-12 col-md-6'>
-          <div class='text pt-3' data-aos="fade-right">
+          <div class='text pt-5' data-aos="fade-right">
             <p data-i18n="about_p1">
               Naya Cosmetics was found in 2022 in Dubai, United Arab Emirates (UAE). The founder & CEO, Mohammed Mumin
               is
@@ -96,7 +96,7 @@
         </div>
         <div class='col-sm-12 col-md-6'>
           <div class='d-flex justify-content-end' data-aos="fade-left">
-            <img class='img-fluid' src='assets/img/Naya_about_img.png' />
+            <img class='img-fluid' src='assets/img/Naya_about_img.png' alt="about image" />
           </div>
         </div>
       </div>
@@ -108,21 +108,22 @@
   <div class='global_bg section py-5 set_dir'>
     <div class="container">
       <div class="row">
+        <div class='header pt-lg-5' data-aos="fade-right">
+          <h3 data-i18n="local_title">local & international presence
+        </div>
         <div class="col-sm-12 col-md-6">
-          <div class='pt-lg-5' data-aos="fade-right">
-            <h3 class='header' data-i18n="local_title">local & international presence
-            </h3>
-          </div>
-          <div class='pt-3 text' data-aos="fade-right">
+          <div class='pt-5 text' data-aos="fade-right">
             <p data-i18n="local_p1">
-              Naya Cosmetics has local & international partners, liaises with production facilities in the UAE, UK, the
+              Naya Cosmetics has local & international partners, liaises with production facilities in the UAE, UK,
+              the
               Netherlands, Morocco and Brazil.
             </p>
-            <p data-i18n="local_2">Naya Cosmetics has strategic partnerships with major wholesalers, dealers &
+            <p data-i18n="local_p2">Naya Cosmetics has strategic partnerships with major wholesalers, dealers &
               authorized resellers, agents,
               distributors, and cosmetics retailers around the world.
             </p>
-            <p data-i18n="local_p3">Naya Cosmetics has offices in the UAE and active trade & business relationships in,
+            <p data-i18n="local_p3">Naya Cosmetics has offices in the UAE and active trade & business relationships
+              in,
               Iraq, the
               Netherlands, UK, Morocco, Brazil and Saudi Arabia.
             </p>
@@ -130,7 +131,7 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <div class='d-flex align-item-center justify-content-end pb-4' data-aos="fade-left">
-            <img class='img-fluid' src="assets/img/Naya-global_img.png" />
+            <img class='img-fluid' src="assets/img/Naya-global_img.png" alt="Global image" />
           </div>
         </div>
         </row>
@@ -144,12 +145,18 @@
     <div class='section body_care_bg pt-5 set_dir'>
       <div class="container">
         <div class="row">
-          <h2 class='header pt-lg-5' data-i18n="body_title" data-aos="fade-right">body care</h2>
-          <div class="col-sm-12 col-md-7" data-aos="fade-right"> 
-            <img class='img-fluid img_1' src='./assets/img/Naya_body_care_en.png' />
+          <div class='header pt-lg-5' data-aos="fade-right">
+            <h2 data-i18n="body_title">body care</h2>
           </div>
-          <div class="col-sm-12 col-md-5 model" data-aos="fade-left">
-            <img class='img-fluid p-top' src='assets/img/Naya_Model_1.png' />
+          <div class="col-sm-12 col-md-7">
+            <div data-aos="fade-right">
+              <img class='img-fluid img_1' src='./assets/img/Naya_body_care_en.png' alt="body products image" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5">
+            <div class="model p-top" data-aos="fade-left">
+              <img class='img-fluid' src='assets/img/Naya_Model_1.png' alt="Model image" />
+            </div>
           </div>
         </div>
       </div>
@@ -158,10 +165,12 @@
     <div class='section makeup_bg pt-5'>
       <div class="container">
         <div class="row">
-          <h2 class='header pt-lg-5 set_dir' data-i18n="makeup_title" data-aos="fade-right">makeup collection</h2>
+          <div class='header pt-lg-5 set_dir' data-aos="fade-right">
+            <h2 data-i18n="makeup_title">makeup collection</h2>
+          </div>
           <div class="col-sm-12">
             <div data-aos="fade-right">
-              <img class='img-fluid img_2' src='./assets/img/Naya_makup_img_en.png' />
+              <img class='img-fluid img_2' src='./assets/img/Naya_makup_img_en.png' alt="Makeup image" />
             </div>
           </div>
         </div>
@@ -172,9 +181,11 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-8">
-            <h2 class='header pt-lg-5' data-i18n="hair_title" data-aos="fade-right">shampoos & hair care</h2>
+            <div class='header pt-lg-5' data-aos="fade-right">
+              <h2 data-i18n="hair_title">shampoos & hair care</h2>
+            </div>
             <div class="left_dir" data-aos="fade-right">
-              <img class='img-fluid img_3' src='./assets/img/Naya_hair_products_img_en.png' />
+              <img class='img-fluid img_3' src='./assets/img/Naya_hair_products_img_en.png' alt="Hair proudcts image" />
             </div>
           </div>
         </div>
@@ -186,7 +197,9 @@
   <div class='vision_bg section pt-5 set_dir' id="vision">
     <div class="container">
       <div class="row">
-        <h2 class='header pt-lg-5 mt-4' data-i18n="mission_title" data-aos="fade-right">mission & vison</h2>
+        <div class='header pt-lg-5' data-aos="fade-right">
+          <h2 data-i18n="mission_title">mission & vison</h2>
+        </div>
         <div class='col-sm-12 col-md-6 d-flex align-item-center'>
           <div class='text pt-5' data-aos="fade-right">
             <p data-i18n="mission_p1">We provide care that lasts a lifetime…</p>
@@ -196,7 +209,7 @@
         </div>
         <div class="col-sm-12 col-md-5" offset="col-md-1">
           <div class="model" data-aos="fade-left">
-            <img class='img-fluid' src='assets/img/Naya_Model_2.png' />
+            <img class='img-fluid' src='assets/img/Naya_Model_2.png' alt="Model image" />
           </div>
         </div>
       </div>
@@ -207,67 +220,69 @@
   <div class='contact_bg section pt-5 set_dir' id="contact">
     <div class="container">
       <div class="row">
-        <h2 class='header pt-lg-5' data-i18n="contact_title"  data-aos="fade-right">contact us</h2>
-        <div class="">
-          <div class="col-sm-12 col-lg-8">
-            <div class="alert alert-success d-none" id="success" role="alert">
-              Your message has been send successfully
-            </div>
-            <div class="alert alert-danger d-none" id="error" role="alert">
-              Please fill the required inputs
-            </div>
-            <form class="row g-3" id="contact_form" method="post" data-aos="fade-right">
-              <div class="col-md-6">
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" data-i18n="name_input">
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                  data-i18n="email_input" required>
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" id="company" placeholder="Enter your company name"
-                  data-i18n="company_input">
-              </div>
-              <div class="col-md-6">
-                <input type="number" class="form-control" id="phone" placeholder="Enter your phone"
-                  data-i18n="phone_input">
-              </div>
-              <div class="mb-2">
-                <textarea class="form-control" id="message" rows="3" placeholder="Leave a message"
-                  data-i18n="msg_input"></textarea>
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn px-3 form_btn " data-i18n="submit">send</button>
-              </div>
-            </form>
-
+        <div class="header pt-lg-5" data-aos="fade-right">
+          <h2 data-i18n="contact_title">contact us</h2>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+          <div class="alert alert-success d-none" id="success" role="alert">
+            Your message has been send successfully
           </div>
+          <div class="alert alert-danger d-none" id="error" role="alert">
+            Please fill the required inputs
+          </div>
+          <form class="row g-3 pt-3" id="contact_form" method="post" data-aos="fade-right">
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" data-i18n="name_input">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" data-i18n="email_input"
+                required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="company" placeholder="Enter your company name"
+                data-i18n="company_input">
+            </div>
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="phone" placeholder="Enter your phone"
+                data-i18n="phone_input">
+            </div>
+            <div class="mb-2">
+              <textarea class="form-control" id="message" rows="3" placeholder="Leave a message"
+                data-i18n="msg_input"></textarea>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn px-3 form_btn " data-i18n="submit">send</button>
+            </div>
+          </form>
         </div>
         <!-- Naya cosmatics contact info -->
         <div class="col-sm-12 col-md-6">
-          <div class='text pt-5' data-aos="fade-right">
-            <span class='d-block'><i class="fa-solid fa-mobile-screen-button"></i> 00971552294944</span>
-            <span class='d-block'>
-              <i class="fa-solid fa-at"></i><a href='#'> mohammed@nayacosmetics.ae</a></span>
-            <span><i class="fa-solid fa-globe"></i>
-              <a href='www.nayacosmetics.ae'> www.nayacosmetics.ae</a></span>
-            <p><i class="fa-solid fa-location-dot"></i><span class="px-1" data-i18n="address"> Business Center, Sharjah
-                Publishing City Free Zone, Sharjah,
-                United Arab Emirates
-              </span></p>
-            <div class="socail_media py-0">
-              <span><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></span>
-              <span><a href="http://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></span>
-              <span><a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
+          <div data-aos="fade-right">
+            <div class='text pt-5'>
+              <span class='d-block'><i class="fa-solid fa-mobile-screen-button"></i> 00971552294944</span>
+              <span class='d-block'>
+                <i class="fa-solid fa-at"></i><a href='#'> mohammed@nayacosmetics.ae</a></span>
+              <span><i class="fa-solid fa-globe"></i>
+                <a href='www.nayacosmetics.ae'> www.nayacosmetics.ae</a></span>
+              <p><i class="fa-solid fa-location-dot"></i><span class="px-1" data-i18n="address"> Business Center,
+                  Sharjah
+                  Publishing City Free Zone, Sharjah,
+                  United Arab Emirates
+                </span></p>
+              <div class="socail_media py-0">
+                <span><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></span>
+                <span><a href="http://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></span>
+                <span><a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
+              </div>
             </div>
-          </div>
-          <div class="pt-lg-5 preal-img" data-aos="fade-right">
-            <img class='img-fluid' src='assets/img/Naya_pearl.png' />
+            <div class="pt-lg-5 preal-img">
+              <img class='img-fluid' src='assets/img/Naya_pearl.png' alt="Pearl image" />
+            </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 d-flex" data-aos="fade-left">
           <div class="d-flex align-items-end">
-            <img class='img-fluid' src='assets/img/Naya_Contact_img.png' />
+            <img class='img-fluid' src='assets/img/Naya_Contact_img.png' alt="Contact image" />
           </div>
         </div>
       </div>
@@ -286,7 +301,7 @@
       // https://dashboard.emailjs.com/admin/account
       emailjs.init('user_5xJfLYW8neKFpLfEqYzs7');
     })();
-    
+
     AOS.init({
       offset: 200, // offset (in px) from the original trigger point
       // delay: 0, // values from 0 to 3000, with step 50ms
