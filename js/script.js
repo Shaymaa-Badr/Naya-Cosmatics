@@ -172,7 +172,7 @@ const submitForm = (e) => {
     }
     if (formData.name != '' && formData.email != '' && formData.company != '' && formData.phone != '' && formData.message != '') {
         // Send emil using Emailsjs
-        emailjs.send("service_ntucrew", "template_zav0jxn", formData)
+        emailjs.send("service_ebf80cb", "template_a9dle4s", formData)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
             }, function (error) {
