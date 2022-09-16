@@ -89,15 +89,20 @@ const makeupEN = './assets/img/Naya_makup_img_en.png'
 const bodyProductsEn = './assets/img/Naya_body_care_en.png';
 const hairprouductsEn = './assets/img/Naya_hair_products_img_en.png'
 
-console.log(toggleBtn.style.display)
+// Set time for loader
+const loader = document.querySelector('.loader-overlay');
+const main = document.querySelector('body');
 
-// console.log(navLinks)
-// navLinks.forEach(link=>{
-//     link.addEventListener('click',(e)=>{
-//         e.preventDefault()
-//         navBtnToggle()
-//     })
-// })
+function init() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = 'none';
+
+    main.style.display = 'block';
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 4000);
+}
+init()
 
 // Collapse navbar
 const navBtnToggle = () => {
