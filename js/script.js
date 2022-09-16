@@ -76,12 +76,11 @@ const translation = {
     }
 }
 
-let navBtn = document.querySelector('.navbar-collapse')
-let navLinks = document.querySelectorAll('.nav-link')
-let toggleBtn = document.querySelector('.navbar-expand-lg .navbar-toggler')
+let navMenu = document.querySelector('#navbarNavDropdown')
 const langSelector = document.querySelector('select')
 const langOption = document.querySelectorAll('option')
 const topBtn = document.querySelector("#topBtn")
+const loader = document.querySelector('.loader-overlay');
 const makeupAr = './assets/img/Naya_makup_img_ar1.png'
 const bodyProductsAr = './assets/img/Naya_body_care_ar.png';
 const hairprouductsAr = './assets/img/Naya_hair_products_img_ar.png'
@@ -89,27 +88,31 @@ const makeupEN = './assets/img/Naya_makup_img_en.png'
 const bodyProductsEn = './assets/img/Naya_body_care_en.png';
 const hairprouductsEn = './assets/img/Naya_hair_products_img_en.png'
 
-// Set time for loader
-const loader = document.querySelector('.loader-overlay');
-const main = document.querySelector('body');
-
 //Set loader overlay
 function loading() {
-  setTimeout(() => {
-    loader.style.opacity = 0;
-    loader.style.display = 'none';
-  }, 10000);
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+    }, 10000);
 }
 loading()
 
+
 // Collapse navbar
 const navBtnToggle = () => {
-    myCollapse = new bootstrap.Collapse(navBtn);
-    // Create a media condition that targets viewports at least 768px wide
-    const mediaQuery = window.matchMedia('(max-width: 992px)')
-    console.log(mediaQuery.matches)
-    // Check if the media query is true
-    mediaQuery.matches ? myCollapse.hide():null
+    myCollapse = new bootstrap.Collapse(navMenu);
+    myCollapse.hide()
+}
+// Create a media condition that targets viewports at least 768px wide
+const mediaQuery = window.matchMedia('(max-width: 992px)')
+
+// Check if the media query is true
+if (mediaQuery.matches) {
+    navMenu.addEventListener('click', function (e) {
+        e.target.classList.contains('nav-link') ? navBtnToggle() : null
+    })
+} else {
+    null
 }
 
 // Select language
@@ -119,7 +122,7 @@ langSelector.addEventListener('change', e => {
     setFonts(lang)
     setSlectedOption(lang)
     localStorage.setItem('lang', lang)
-    navBtnToggle()
+    mediaQuery.matches ? navBtnToggle() : null
 })
 
 // Get language from LS

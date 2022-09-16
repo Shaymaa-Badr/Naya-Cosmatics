@@ -96,11 +96,11 @@ a:active {
 
 /* General CSS styles */
 h1 {
-  font-size: 2.7rem;
+  font-size: 2.6rem;
 }
 
 h2 {
-  font-size: 2.5rem
+  font-size: 2.4rem
 }
 
 h3 {
@@ -124,7 +124,6 @@ h3 {
 }
 
 .header {
-  /* line-height: 12.29px; */
   letter-spacing: -0.04px;
   text-transform: uppercase;
   color: #895b6c;
@@ -140,7 +139,6 @@ h3 {
 }
 
 .text a {
-  font-size: 1.1rem;
   transition: all ease-in-out 0.5s;
 }
 
@@ -187,44 +185,44 @@ h3 {
 
 /* Home component */
 .home-bg {
-  background-image: url('../assets/images/Naya-Home-bg2.png');
+  background-image: url('/assets/images/Naya-Home-bg2.png');
 
 }
 
 /* About component */
 .about-bg {
-  background-image: url('../assets/images/about-bg.png');
+  background-image: url('/assets/images/about-bg.png');
 }
 
 /* Global component */
 .global-bg {
-  background-image: url('../assets/images/Naya-international-bg.png');
+  background-image: url('/assets/images/Naya-international-bg.png');
 }
 
 /* Contact component */
 .contact-bg {
-  background-image: url('../assets/images/Naya-Conatct-bg.png');
+  background-image: url('/assets/images/Naya-Conatct-bg.png');
 }
 
 .body_care-bg {
-  background-image: url('../assets/images/Naya-Makeup-plain-bg.png');
+  background-image: url('/assets/images/Naya-Makeup-plain-bg.png');
 }
 
 .makeup-bg {
-  background-image: url('../assets/images/Naya-Makeup-plain-bg.png');
+  background-image: url('/assets/images/Naya-Makeup-plain-bg.png');
 }
 
 .hair_care-bg {
-  background-image: url('../assets/images/Naya-hair-bg.png');
+  background-image: url('/assets/images/Naya-hair-bg.png');
 }
 
 .vision-bg {
-  background-image: url('../assets/images/Naya-mission-bg.png');
+  background-image: url('/assets/images/Naya-mission-bg.png');
 
 }
 
 .contact-bg {
-  background-image: url('../assets/images/Naya-Conatct-bg.png');
+  background-image: url('/assets/images/Naya-Conatct-bg.png');
 }
 
 /* Naya CSS styles */
@@ -241,7 +239,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all ease-in-out 5s;
 }
 
 .loader {
@@ -334,7 +331,9 @@ h3 {
 
 /* For Tablet View */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
+  .home-row {
+    padding-top: 4.5rem !important;
+  }
   h1,
   h2 {
     font-size: 1.9rem;
@@ -349,7 +348,7 @@ h3 {
   } */
 
   .text {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
     line-height: 19px;
   }
 
@@ -357,8 +356,6 @@ h3 {
     font-size: 1.1rem !important;
     line-height: 19px;
   }
-
-
   .preal-img {
     width: 200px !important;
   }
@@ -367,28 +364,17 @@ h3 {
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (min-width: 640px) and (max-width: 768px) {
 
-  /* h1 {
-     font-size: 1.6rem
-  } */
-
-  h2 {
-    font-size: 1.9rem;
+  h1,h2 {
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   /* .brand-logo {
     width: 350px !important
   } */
-
-  .text,
-  .text a {
-    font-size: 1.1rem !important;
-    line-height: 19px;
-  }
-
   .preal-img {
     width: 190px !important;
   }
@@ -397,20 +383,7 @@ h3 {
 /* For Mobile Portrait View */
 @media screen and (min-width: 480px) and (max-width: 640px) {
 
-  .header_ar_font {
-    font-size: 1.9rem;
-  }
-
-  .header_en_font {
-    font-size: 1.5rem;
-  }
-
-  /* h1 {
-    
-
-  } */
-
-  h2 {
+h1,h2 {
     font-size: 1.9rem;
   }
 
@@ -420,12 +393,6 @@ h3 {
 
   /* .brand-logo {
     width: 300px !important
-  } */
-
-  /* .text,
-  .text a {
-    font-size: 0.95rem !important;
-    line-height: 19px;
   } */
 
   .preal-img {
