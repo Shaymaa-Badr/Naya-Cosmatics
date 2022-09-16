@@ -76,15 +76,38 @@ const translation = {
     }
 }
 
+let navBtn = document.querySelector('.navbar-collapse')
+let navLinks = document.querySelectorAll('.nav-link')
+let toggleBtn = document.querySelector('.navbar-expand-lg .navbar-toggler')
 const langSelector = document.querySelector('select')
 const langOption = document.querySelectorAll('option')
+const topBtn = document.querySelector("#topBtn")
 const makeupAr = './assets/img/Naya_makup_img_ar1.png'
 const bodyProductsAr = './assets/img/Naya_body_care_ar.png';
 const hairprouductsAr = './assets/img/Naya_hair_products_img_ar.png'
 const makeupEN = './assets/img/Naya_makup_img_en.png'
 const bodyProductsEn = './assets/img/Naya_body_care_en.png';
 const hairprouductsEn = './assets/img/Naya_hair_products_img_en.png'
-const topBtn = document.querySelector("#topBtn")
+
+console.log(toggleBtn.style.display)
+
+// console.log(navLinks)
+// navLinks.forEach(link=>{
+//     link.addEventListener('click',(e)=>{
+//         e.preventDefault()
+//         navBtnToggle()
+//     })
+// })
+
+// Collapse navbar
+const navBtnToggle = () => {
+    myCollapse = new bootstrap.Collapse(navBtn);
+    // Create a media condition that targets viewports at least 768px wide
+    const mediaQuery = window.matchMedia('(max-width: 992px)')
+    console.log(mediaQuery.matches)
+    // Check if the media query is true
+    mediaQuery.matches ? myCollapse.hide():null
+}
 
 // Select language
 langSelector.addEventListener('change', e => {
@@ -93,14 +116,15 @@ langSelector.addEventListener('change', e => {
     setFonts(lang)
     setSlectedOption(lang)
     localStorage.setItem('lang', lang)
+    navBtnToggle()
 })
+
 // Get language from LS
 document.addEventListener('DOMContentLoaded', () => {
     const lang = localStorage.getItem('lang')
     setLang(lang)
     setFonts(lang)
     setSlectedOption(lang)
-
 })
 
 // Set app language
@@ -130,6 +154,8 @@ const setLang = (lang) => {
         document.querySelector('.img_3').src = hairprouductsEn
     }
 }
+
+// Set selected language
 const setSlectedOption = (lang) => {
     langOption.forEach(element => {
         element.value === lang ? element.setAttribute('selected', 'selected') : element.removeAttribute('selected')
