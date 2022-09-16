@@ -34,20 +34,20 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto navbar-nav-scroll text" style="--bs-scroll-height: 200px;" id="dropdown">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#home" data-i18n="home">Home</a>
+            <a class="nav-link" onclick="navBtnToggle()" aria-current="page" href="#home" data-i18n="home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" data-i18n="about">About</a>
+            <a class="nav-link" onclick="navBtnToggle()" href="#about" data-i18n="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#products" data-i18n="products">Products</a>
+            <a class="nav-link" onclick="navBtnToggle()" href="#products" data-i18n="products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact" data-i18n="contact">Contact us</a>
+            <a class="nav-link" onclick="navBtnToggle()" href="#contact" data-i18n="contact">Contact us</a>
           </li>
-          <li class="nav-item dropdown px-1">
+          <li class="nav-item dropdown px-1" >
             <select class="form-select text" aria-label="Default select example">
-              <option class="opt" value="en" selected>English</option>
+              <option class="opt" value="en" selected >English</option>
               <option class="opt" value="ar">العربية</option>
             </select>
           </li>
@@ -57,13 +57,18 @@
   </nav>
 
   <!-- Home section -->
-  <div class='home_bg section pt-5' id="home">
+  <div class='home-bg section pt-5' id="home">
     <div class="container">
-      <div class='row'>
-        <div class='col-sm-6 ml-0 mt-5'>
-          <div class='my-5 brand-logo'>
+      <div class='row home-row'>
+        <div class='col-sm-12 col-md-6'>
+          <div class='brand-logo pt-5'>
             <img class='img-fluid' src='assets/img/Naya Cosmetics_Logo_PNG-02.png' alt="Naya main logo" />
             <h1 class='header mt-5' data-i18n="main_title">Home of Beauty & Care Products</h1>
+          </div>
+        </div>
+        <div class='col-sm-12 col-md-6'>
+          <div class='pt-5'>
+            <img class='img-fluid' src='assets/img/Naya-Cosmetics_Profile_ENx.png' alt="Naya main logo" />
           </div>
         </div>
       </div>
@@ -71,14 +76,14 @@
   </div>
 
   <!-- About section -->
-  <div class='about_bg section pt-5 set_dir' id="about">
+  <div class='about-bg section pt-5 set_dir' id="about">
     <div class="container">
       <div class='row'>
         <div class='header pt-lg-5' data-aos="fade-up">
           <h2 data-i18n="about_title">about us</h2>
         </div>
         <div class='col-sm-12 col-md-6'>
-          <div class='text pt-5' data-aos="fade-up">
+          <div class='text pt-lg-5 pt-sm-3' data-aos="fade-up">
             <p data-i18n="about_p1">
               Naya Cosmetics was found in 2022 in Dubai, United Arab Emirates (UAE). The founder & CEO, Mohammed Mumin
               is
@@ -105,14 +110,14 @@
   </div>
 
   <!-- Local & International section -->
-  <div class='global_bg section py-5 set_dir'>
+  <div class='global-bg section py-5 set_dir'>
     <div class="container">
       <div class="row">
         <div class='header pt-lg-5' data-aos="fade-up">
           <h3 data-i18n="local_title">local & international presence
         </div>
         <div class="col-sm-12 col-md-6">
-          <div class='pt-5 text' data-aos="fade-up">
+          <div class='text pt-lg-5 pt-sm-3' data-aos="fade-up">
             <p data-i18n="local_p1">
               Naya Cosmetics has local & international partners, liaises with production facilities in the UAE, UK,
               the
@@ -142,7 +147,7 @@
   <!-- Products section -->
   <div class="products" id="products">
     <!-- Body care section -->
-    <div class='section body_care_bg pt-5 set_dir'>
+    <div class='section body_care-bg pt-5 set_dir'>
       <div class="container">
         <div class="row">
           <div class='header pt-lg-5' data-aos="fade-up">
@@ -162,7 +167,7 @@
       </div>
     </div>
     <!-- Make up section -->
-    <div class='section makeup_bg pt-5'>
+    <div class='section makeup-bg pt-5'>
       <div class="container">
         <div class="row">
           <div class='header pt-lg-5 set_dir' data-aos="fade-up">
@@ -177,7 +182,7 @@
       </div>
     </div>
     <!-- Hair products section -->
-    <div class='section hair_care_bg pt-5'>
+    <div class='section hair_care-bg pt-5'>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-8">
@@ -194,7 +199,7 @@
   </div>
 
   <!-- Vision & Mission section -->
-  <div class='vision_bg section pt-5 set_dir' id="vision">
+  <div class='vision-bg section pt-5 set_dir' id="vision">
     <div class="container">
       <div class="row">
         <div class='header pt-lg-5' data-aos="fade-up">
@@ -217,7 +222,7 @@
   </div>
 
   <!-- Contact us section -->
-  <div class='contact_bg section pt-5 set_dir' id="contact">
+  <div class='contact-bg section pt-5 set_dir' id="contact">
     <div class="container">
       <div class="row">
         <div class="header pt-lg-5" data-aos="fade-up">
@@ -259,12 +264,12 @@
         <div class="col-sm-12 col-md-6">
           <div data-aos="fade-up">
             <div class='text pt-5'>
-              <span class='d-block'><i class="fa-solid fa-mobile-screen-button"></i> 00971552294944</span>
+              <span class='d-block'><i class="bi bi-phone" style="font-size: 1.3rem;"></i> 00971552294944</span>
               <span class='d-block'>
-                <i class="fa-solid fa-at"></i><a href='#'> info@nayacosmetics.ae</a></span>
-              <span><i class="fa-solid fa-globe"></i>
+                <i class="bi bi-at" style="font-size: 1.5rem;"></i><a href='#'> info@nayacosmetics.ae</a></span>
+              <span><i class="bi bi-globe" style="font-size: 1.2rem;"></i>
                 <a href='https://www.nayacosmetics.ae'> www.nayacosmetics.ae</a></span>
-              <p><i class="fa-solid fa-location-dot"></i><span class="px-1" data-i18n="address"> Business Center,
+              <p><i class="bi bi-geo-alt-fill" style="font-size: 1.2rem;"></i><span class="px-1" data-i18n="address">Business Center,
                   Sharjah
                   Publishing City Free Zone, Sharjah,
                   United Arab Emirates
@@ -290,7 +295,9 @@
   </div>
 
   <!-- Scroll top btn -->
-  <button class="top_btn" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+  <button class="top_btn" id="topBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
 
 
   <!-- JavaScript Bundle with Popper -->

@@ -97,7 +97,7 @@ a:active {
 /* General CSS styles */
 h1,
 h2 {
-  font-size: 2.2rem
+  font-size: 2.5rem
 }
 
 h3 {
@@ -133,6 +133,11 @@ h3 {
   font-size: 1.1rem;
   letter-spacing: -0.13px;
   color: #645359;
+
+}
+
+.text a {
+  font-size: 1.1rem;
   transition: all ease-in-out 0.5s;
 }
 
@@ -176,46 +181,47 @@ h3 {
 }
 
 /* components */
+
 /* Home component */
-.home_bg {
-  background-image: url('../assets/images/Naya-Home-bg.png');
-  min-height: 100vh;
+.home-bg {
+  background-image: url('../assets/images/Naya-Home-bg2.png');
+  
 }
 
 /* About component */
-.about_bg {
-  background-image: url('../assets/images/about_bg.png');
+.about-bg {
+  background-image: url('/assets/images/about-bg.png');
 }
 
 /* Global component */
-.global_bg {
-  background-image: url('../assets/images/Naya-international_bg.png');
+.global-bg {
+  background-image: url('/assets/images/Naya-international-bg.png');
 }
 
 /* Contact component */
-.contact_bg {
-  background-image: url('../assets/images/Naya-Conatct_bg.png');
+.contact-bg {
+  background-image: url('/assets/images/Naya-Conatct-bg.png');
 }
 
-.body_care_bg {
-  background-image: url('../assets/images/Naya_Make_up__plain_bg.png');
+.body_care-bg {
+  background-image: url('/assets/images/Naya-Makeup-plain-bg.png');
 }
 
-.makeup_bg {
-  background-image: url('../assets/images/Naya_Make_up__plain_bg.png');
+.makeup-bg {
+  background-image: url('/assets/images/Naya-Makeup-plain-bg.png');
 }
 
-.hair_care_bg {
-  background-image: url('../assets/images/Naya_hair_bg.png');
+.hair_care-bg {
+  background-image: url('/assets/images/Naya-hair-bg.png');
 }
 
-.vision_bg {
-  background-image: url('../assets/images/Naya-mission_bg.png');
+.vision-bg {
+  background-image: url('/assets/images/Naya-mission-bg.png');
 
 }
 
-.contact_bg {
-  background-image: url('../assets/images/Naya-Conatct_bg.png');
+.contact-bg {
+  background-image: url('/assets/images/Naya-Conatct-bg.png');
 }
 
 /* Naya CSS styles */
@@ -256,30 +262,47 @@ h3 {
   background-color: #ad7f91;
   color: #f2f2f2;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 900;
   opacity: 0;
   transition: all 0.3s;
 }
 
 /* For Desktop View */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+  .home-row {
+    padding-top: 5.3rem !important;
+  }
+}
 
 /* For Tablet View */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  h1,
+  h2 {
+    font-size: 1.9rem;
+  }
+
   h3 {
     font-size: 1.7rem;
   }
 
-  .brand-logo {
+  /* .brand-logo {
     width: 400px !important
-  }
+  } */
 
   .text {
     font-size: 1rem !important;
     line-height: 19px;
   }
+
+  .text a {
+    font-size: 1.1rem !important;
+    line-height: 19px;
+  }
+
 
   .preal-img {
     width: 200px !important;
@@ -289,7 +312,10 @@ h3 {
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (min-width: 640px) and (max-width: 768px) {
 
-  h1,
+  /* h1 {
+     font-size: 1.6rem
+  } */
+
   h2 {
     font-size: 1.9rem;
   }
@@ -298,12 +324,13 @@ h3 {
     font-size: 1.6rem;
   }
 
-  .brand-logo {
+  /* .brand-logo {
     width: 350px !important
-  }
+  } */
 
-  .text {
-    font-size: 15px !important;
+  .text,
+  .text a {
+    font-size: 1.1rem !important;
     line-height: 19px;
   }
 
@@ -315,8 +342,17 @@ h3 {
 /* For Mobile Portrait View */
 @media screen and (min-width: 480px) and (max-width: 640px) {
 
+  .header_ar_font{
+    font-size: 2rem;
+  }
+  .header_en_font{
+    font-size: 1.5rem;
+  }
+  /* h1 {
+    
 
-  h1,
+  } */
+
   h2 {
     font-size: 1.9rem;
   }
@@ -325,11 +361,12 @@ h3 {
     font-size: 1.6rem;
   }
 
-  .brand-logo {
+  /* .brand-logo {
     width: 300px !important
-  }
+  } */
 
-  .text {
+  .text,
+  .text a {
     font-size: 0.95rem !important;
     line-height: 19px;
   }
