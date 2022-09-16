@@ -241,6 +241,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all ease-in-out 5s;
 }
 
 .loader {
@@ -397,7 +398,7 @@ h3 {
 @media screen and (min-width: 480px) and (max-width: 640px) {
 
   .header_ar_font {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .header_en_font {
