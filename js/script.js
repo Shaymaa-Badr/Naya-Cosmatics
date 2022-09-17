@@ -1,3 +1,5 @@
+// Create a media condition that targets viewports at least 992px wide
+const mediaQuery = window.matchMedia('(max-width: 992px)')
 // Translation object
 const translation = {
     en: {
@@ -7,25 +9,36 @@ const translation = {
         contact: "Contact Us",
         main_title: "Home of Beauty & Care Products",
         about_title: "about us",
-        about_p1: `Naya Cosmetics was found in 2022 in Dubai, United Arab Emirates (UAE). The founder & CEO, Mohammed Mumin
-        is an entrepreneur with over 15 years of experience in the GCC (Golf Region) and Europe, He has extensive experience
-        in the area of trade between the Netherlands and the UAE.`,
-        about_p2: `His background is into business development,
-        marketing, management and sales of diversified products and services ranging from consumer electronics,
-        personal care products, cosmetics, investments and banking solutions.`,
-        about_p3: `He holds the Master’s degree from the
-        Open University in the Netherlands, specializing in management and AI (Artificial Intelligence) at work.`,
+        about_p1: `Naya Cosmetics was found in 2022 in Dubai, United Arab Emirates (UAE), to
+        accommodate the high demand for beauty products and cosmetics in the region.`,
+        about_p2: `Naya Cosmetics facilitates the trade between beauty experts, dermatology
+        specialists and manufacturers, key wholesalers and distributers in different
+        countries throughout Asia, Europe, and the MENA region.`,
+        about_p3: `With its wide network of strategic partners, Naya Cosmetics continuously
+        generates attractive revenues, creates value and provides its partners with key
+        knowhow, operational and logistics support.`,
         local_title: "local & international presence",
-        local_p1: `Naya Cosmetics has local & international partners, liaises with production facilities in the UAE, UK, the Netherlands, Morocco and Brazil.`,
-        local_p2: `Naya Cosmetics has strategic partnerships with major wholesalers, dealers & authorized resellers, agents,
-              distributors, and cosmetics retailers around the world.`,
-        local_p3: `Naya Cosmetics has offices in the UAE and active trade & business relationships in, Iraq, the Netherlands, UK, Morocco, Brazil and Saudi Arabia.`,
+        local_p1: `Naya Cosmetics has strong strategic alliances internationally. The
+        company has active relationship with local production facilities in the
+        UAE, UK, Morocco & the Netherlands.`,
+        local_p2: `Naya Cosmetics has a wide network of strategic relationships with
+        cosmetics wholesalers, dealers, retail resellers, agents and key
+        distributors around the world.`,
+        local_p3: `Naya Cosmetics has offices in the UAE and active trade & partnerships
+        in other counties such as Iraq, Saudi Arabia and the Netherlands.`,
         body_title: "body care",
         makeup_title: "makeup collection",
         hair_title: "shampoos & hair care",
-        mission_title: "mission & vison",
-        mission_p1: "We provide care that lasts a lifetime…",
-        mission_p2: `We are the first choice of cosmetics provider contributing to the world beauty and well-being…`,
+        mission_title: `what can we offer you?`,
+        mission_p1: `Naya Cosmetics can provide you with very attractive offers compared to
+        any other cosmetics provider in the market, in terms of quality, price and
+        delivery time`,
+        mission_p2: `Furthermore, we provide your customers (end-users) with exceptional
+        care that lasts a lifetime by providing them with high quality of care
+        products, customer experience and after sales value service.`,
+        mission_p3: `Our aim is to become your first choice of cosmetics provider for best
+        class body care, makeup and hair care products, while we support you to
+        boost your business growth, sustainability and customer loyalty.`,
         contact_title: "contact us",
         address: `Business Center, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates`,
         submit: "Send",
@@ -103,9 +116,6 @@ const navBtnToggle = () => {
     myCollapse = new bootstrap.Collapse(navMenu);
     myCollapse.hide()
 }
-// Create a media condition that targets viewports at least 768px wide
-const mediaQuery = window.matchMedia('(max-width: 992px)')
-
 // Check if the media query is true
 if (mediaQuery.matches) {
     navMenu.addEventListener('click', function (e) {
