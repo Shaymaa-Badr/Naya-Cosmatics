@@ -386,7 +386,7 @@ h3 {
 }
 
 /* For Mobile Portrait View */
-@media screen and (min-width: 380px) and (max-width: 640px) {
+@media screen and (min-width: 330px) and (max-width: 640px) {
 
   h1,
   h2 {
