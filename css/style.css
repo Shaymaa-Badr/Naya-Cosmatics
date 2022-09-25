@@ -140,13 +140,16 @@ h3 {
 }
 
 .text a {
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
 
 .text a:hover {
   color: #f4e8ef !important;
 }
-
 .section {
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -245,8 +248,14 @@ h3 {
 .loader {
   height: 50px;
   transform-origin: bottom center;
+  -o-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
   animation: rotate 3s linear infinite;
-
+  -o-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+  -webkit-animation: rotate 3s linear infinite;
 }
 
 .circle {
@@ -255,26 +264,44 @@ h3 {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  transform: scale(0);
-  animation: grow 1.5s linear infinite;
   margin: -10px;
+  -webkit-animation: grow 1.5s linear infinite;
+  animation: grow 1.5s linear infinite;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
 }
 
 .circle:nth-child(2) {
   background-color: #ad7f91;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  -ms-animation-delay:.75s;
   animation-delay: 0.75s;
+
 }
 
 @keyframes rotate {
   to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
+}
 }
 
 @keyframes grow {
   50% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
-  }
+}
 }
 
 
@@ -284,19 +311,27 @@ h3 {
 }
 
 .toggle-btn:focus {
-  box-shadow: 0 0 0 0 !important
+  box-shadow: 0 0 0 0 !important;
 }
 
 .form_btn,
 .toggle-btn,
 .toggle-btn:focus {
-  background-color: #ad7f91 !important;
   color: #f2f2f2;
+  background-color: #ad7f91 !important;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
 
 .alert {
-  transition: all ease-in-out 0.5;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 .form_btn:hover {
@@ -320,6 +355,10 @@ h3 {
   font-size: 1.5rem;
   font-weight: 900;
   opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -341,8 +380,6 @@ h3 {
   h3 {
     font-size: 1.9rem;
   }
-
-
   /* .brand-logo {
     width: 400px !important
   } */
@@ -373,10 +410,12 @@ h3 {
   h3 {
     font-size: 1.7rem;
   }
-.text{
-  font-size: 1rem;
-  line-height: 19px;
-}
+
+  .text {
+    font-size: 1rem;
+    line-height: 19px;
+  }
+
   /* .brand-logo {
     width: 350px !important
   } */
