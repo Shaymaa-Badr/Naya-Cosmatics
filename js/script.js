@@ -49,6 +49,7 @@ const translation = {
         phone_input: "Phone number",
         company_input: "Company name",
         msg_input: "Leave a message",
+        message_status:`Your message has been send successfully`
     },
     ar: {
         home: 'الرئيسية',
@@ -99,6 +100,7 @@ const translation = {
         phone_input: "رقم الهاتف",
         company_input: "إسم الشركة",
         msg_input: "اترك رسالة",
+        message_status:`تم إرسال رسالتك بنجاح`
     }
 }
 
@@ -119,7 +121,7 @@ function loading() {
     setTimeout(() => {
         loader.style.opacity = 0;
         loader.style.display = 'none';
-    }, 10000);
+    }, 5000);
 }
 loading()
 
