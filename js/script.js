@@ -49,7 +49,8 @@ const translation = {
         phone_input: "Phone number",
         company_input: "Company name",
         msg_input: "Leave a message",
-        message_status:`Your message has been send successfully`
+        message_status:`Your message has been send successfully`,
+        filling_msg:`Please fill the required inputs`
     },
     ar: {
         home: 'الرئيسية',
@@ -100,7 +101,8 @@ const translation = {
         phone_input: "رقم الهاتف",
         company_input: "إسم الشركة",
         msg_input: "اترك رسالة",
-        message_status:`تم إرسال رسالتك بنجاح`
+        message_status:`تم إرسال رسالتك بنجاح`,
+        filling_msg:`برجاء ملء جميع البيانات`
     }
 }
 
@@ -109,18 +111,19 @@ const langSelector = document.querySelector('select')
 const langOption = document.querySelectorAll('option')
 const topBtn = document.querySelector("#topBtn")
 const loader = document.querySelector('.loader-overlay');
-const makeupAr = './assets/img/Naya_makup_img_ar1.png'
-const bodyProductsAr = './assets/img/Naya_body_care_ar.png';
-const hairprouductsAr = './assets/img/Naya_hair_products_img_ar.png'
-const makeupEN = './assets/img/Naya_makup_img_en.png'
-const bodyProductsEn = './assets/img/Naya_body_care_en.png';
-const hairprouductsEn = './assets/img/Naya_hair_products_img_en.png'
+const makeupAr = './assets/img/NY-MAKEUP-AR.png'
+const bodyProductsAr = './assets/img/NY-BODYCARE-AR.png';
+const hairprouductsAr = './assets/img/NY-HAIRCARE-AR.png'
+const makeupEN = './assets/img/NY-MAKEUP-EN.png'
+const bodyProductsEn = './assets/img/NY-BODYCARE-EN.png';
+const hairprouductsEn = './assets/img/NY-HAIRCARE-EN.png'
 
 //Set loader overlay
 function loading() {
     setTimeout(() => {
         loader.style.opacity = 0;
         loader.style.display = 'none';
+        document.body.style.overflowY = 'visible'
     }, 5000);
 }
 loading()
