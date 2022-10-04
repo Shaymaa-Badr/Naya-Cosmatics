@@ -195,12 +195,12 @@ h3 {
 
 /* About component */
 .about-bg {
-  background-image: url('/assets/images/NY-ABOUT-BG.png');
+  background-image: url('/assets/images/NY-ABOUT-BG.webp');
 }
 
 /* Global component */
 .global-bg {
-  background-image: url('/assets/images/NY-GLOBAL-BG.png');
+  background-image: url('/assets/images/NY-GLOBAL-BG.webp');
 }
 
 /* Contact component */
@@ -209,11 +209,11 @@ h3 {
 }
 
 .body_care-bg {
-  background-image: url('/assets/images/NY-MAKEUP-BG.jpg');
+  background-image: url('/assets/images/NY-MKAEUP-BG.jpg');
 }
 
 .makeup-bg {
-  background-image: url('/assets/images/NY-MAKEUP-BG.jpg');
+  background-image: url('/assets/images/NY-MKAEUP-BG.jpg');
 }
 
 .hair_care-bg {
@@ -225,7 +225,7 @@ h3 {
 }
 
 .contact-bg {
-  background-image: url('/assets/images/NY-CONTACT-BG.jpg');
+  background-image: url('/assets/images/NY-CONTACTUS-BG.jpg');
 }
 
 /* Naya CSS styles */
